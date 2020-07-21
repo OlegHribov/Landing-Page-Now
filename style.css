@@ -1,0 +1,231 @@
+
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+}
+
+/*font for h1 head*/
+@font-face{
+	font-family: "Balqis";
+	src: url("fonts/Balqis.woff2") format("woff2"),
+	url("fonts/Balqis.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: "roboto-condensed";
+	src: url("fonts/roboto-condensed.woff2") format("woff2"),
+	url("fonts/roboto-condensed.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+h1{
+	text-shadow: 5px 2px 4px rgba(168, 228, 248, 0.8);
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+body{
+	color: black;
+	font-style: 18px;
+	line-height: 21px;
+	background: rgba(208, 233, 241, 0.8);
+}
+
+dl{
+	margin-left: -1em;
+}
+
+dt{
+	list-style: none;
+	background: url(images/services_ico.png) no-repeat 0 2px;
+	padding-left: 25px;
+}
+
+dd{
+	font-family: "roboto-condensed";
+}
+
+li{
+	list-style: none;
+}
+
+footer{
+	background: rgb(83, 83, 83);
+	color: wheat;
+}
+
+ 
+
+.header{
+ background-image: url(images/header_1.jpg);
+ height: 100vh;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: bottom center;
+}
+
+.container{
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+
+.headerTop{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+	font-style: 24px;
+	line-height: 28px;
+}
+
+.titleHeader{
+	font-family: Balqis;
+	font-size: 100px;
+	line-height: 120px;
+	text-align: center;
+	font-style: italic;
+}
+.titleHeader span{
+	display: block;
+	text-align: right;
+	font-size: 35px;
+	line-height: 38px;
+	font-style: italic;
+}
+
+.menuListItem{
+	display: inline-block;
+}
+
+.menuListItem + .menuListItem{
+	margin-left: 5px;
+}
+.menuTopButton{
+	background-color: rgb(104, 198, 230, 0.8);
+	color: white;
+}
+
+/* sliderCertificate */
+
+.sliderCertificate{
+	border: 6px solid rgba(122, 125, 126, 0.9);
+	position: relative;
+	margin: 0 auto;
+	width: 610px;
+}
+
+.slider-certificat{
+	
+}
+
+.prev, .next{
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: darkblue;
+font-weight: bold;
+font-size: 18px;
+transition: 4s ease;
+border-radius: 0 3px 3px 0;
+}
+
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+	background-color: rgba(43, 178, 223, 0.8);
+}
+
+.dot{
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0.2px;
+	background-color: blue;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 4s ease;
+}
+
+.active, dot:hover{
+background-color: darkblue;
+}
+
+.fade{
+	-webkit-animation-name:fade;
+	-webkit-animation-duration: 1.5s ease;
+	animation-name: fade;
+	animation-duration: 1.5s ease;
+}
+
+.text-slider{
+	font-family: appetite new;
+	font-size: 80px;
+	line-height: 100px;
+	text-align: center;
+	font-style: italic;
+	text-shadow: 5px 2px 4px rgba(16, 105, 134, 0.8);
+}
+
+@keyframes fade{
+	form{opacity:.4;}
+	to{opacity: 1;}
+}
+
+.orderFormButton{
+	color: white;
+	background-color: rgb(248, 12, 12, 1);
+	width: 120px;
+	height: 54px;
+}
+
+.titleSection{
+	font-size: 30px;
+	font-style: italic;
+	text-shadow: 5px 2px 4px rgba(43, 178, 223, 0.8);
+}
+
+.whyAreWe{
+	margin: 0 auto;
+	min-width: 1200px;
+}
+
+.pLeft{
+	padding: 15px;
+	text-align: left;
+}
+
+.pRight{
+	padding: 15px;
+	text-align: right;
+}
+
+.whyAreWeImgLeft{
+	float: left;
+	margin: 10px 10px 10px 10px;
+}
+
+.whyAreWeImgRight{
+	float: right;
+	margin: 10px 10px 10px 10px;
+}
+
+.footerBlok{
+	width: 50%;
+	margin: 0 auto;
+	height: 200px;
+}
